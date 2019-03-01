@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextViewWithTTF">
+        <attr name="ttf_name" format="string" />
+    </declare-styleable>
+
+    <!-- 倒影控件属性 -->
+    <declare-styleable name="reflectItemView">
+        <attr name="isReflect"  format="boolean" />
+        <attr name="isShape"  format="boolean" />
+        <attr name="reflect_height"  format="dimension" />
+        <attr name="radius"  format="dimension" />
+        <attr name="refle_spacing"  format="dimension" />
+    </declare-styleable>
+
+    <!-- 顶层控件属性 -->
+    <declare-styleable name="MainUpView">
+        <attr name="upImageRes"  format="reference" />
+        <attr name="shadowImageRes"  format="reference" />
+    </declare-styleable>
+
+    <!-- 标签控件 -->
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string"/>
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color"/>
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension"/>
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean"/>
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean"/>
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color"/>
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension"/>
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension"/>
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51"/>
+            <enum name="TOP_RIGHT" value="53"/>
+            <enum name="BOTTOM_LEFT" value="83"/>
+            <enum name="BOTTOM_RIGHT" value="85"/>
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvTabHost">
+        <attr name="cursorRes" format="reference" />
+        <attr name="textColorDefault" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="titleWidth" format="dimension"></attr>
+        <attr name="titleHeight" format="dimension"></attr>
+        <attr name="titleSpace" format="dimension"></attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="dividerHeight" format="dimension"></attr>
+        <attr name="durationScroll" format="integer"></attr>
+        <attr name="scalable" format="boolean"></attr>
+        <attr name="scale" format="float"></attr>
+        <attr name="animationType">
+            <enum name="DEFAULT" value="0"></enum>
+            <enum name="TRANSLATE" value="1"></enum>
+        </attr>
+        <attr name="durationLarge" format="integer"></attr>
+        <attr name="durationSmall" format="integer"></attr>
+        <attr name="delay" format="integer" />
+        <attr name="cursorWidth" format="dimension"></attr>
+        <attr name="cursorHeight" format="dimension"></attr>
+        <attr name="cursorMarginLeft" format="dimension"></attr>
+        <attr name="cursorMarginTop" format="dimension"></attr>
+        <attr name="cursorMarginRight" format="dimension"></attr>
+        <attr name="cursorMarginBottom" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ContactHeadLayout">
+        <attr name="nameTextColor" format="color" />
+        <attr name="nameTextSize" format="dimension" />
+        <attr name="nameText" format="string" />
+        <attr name="phoneText" format="string" />
+        <attr name="smallDefaultHead" format="boolean" />
+        <attr name="showSingleName" format="boolean" />
+        <attr name="textBackgroundHeight" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="voiceView">
+        <!--中间线的颜色，就是波形的时候，大家可以看到，中间有一条直线，就是那个-->
+        <attr name="middleLine" format="color" />
+        <!--中间线的高度，因为宽度是充满的-->
+        <attr name="middleLineHeight" format="dimension" />
+        <!--波动的线的颜色，如果是矩形样式的话，刚是矩形的颜色-->
+        <attr name="voiceLine" format="color" />
+        <!--波动线的横向移动速度，线的速度的反比，即这个值越小，线横向移动越快，越大线移动越慢，默认90-->
+        <attr name="lineSpeed" format="integer" />
+        <!--矩形的宽度-->
+        <attr name="rectWidth" format="dimension" />
+        <!--矩形之间的间隔-->
+        <attr name="rectSpace" format="dimension" />
+        <!--矩形的初始高度，就是没有声音的时候，矩形的高度-->
+        <attr name="rectInitHeight" format="dimension" />
+        <!--所输入音量的最大值-->
+        <attr name="maxVolume" format="float" />
+        <!--控件的样式，一共有两种，波形或者矩形-->
+        <attr name="viewMode">
+            <enum name="line" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+        <!--灵敏度，默认值是4-->
+        <attr name="sensibility">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="four" value="4" />
+            <enum name="five" value="5" />
+        </attr>
+        <!--精细度，绘制曲线的时候，每几个像素绘制一次，默认是1，一般，这个值越小，曲线越顺滑，
+            但在一些旧手机上，会出现帧率过低的情况，可以把这个值调大一点，在图片的顺滑度与帧率之间做一个取舍-->
+        <attr name="fineness">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    
+    <declare-styleable name="GifView">
+        <attr name="gifPath" format="string" />
+        <attr name="gifResource" format="reference" />
+    </declare-styleable>
+
+     <declare-styleable name="CircleProgressBar">
+        <attr name="max" format="integer" /> <!-- 进度条最大值 -->
+        <attr name="fill" format="boolean" /> <!-- 是否填充圆形区域 -->
+        <attr name="Paint_Width" format="integer" /> <!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="Paint_Color" format="integer" /> <!-- 画笔颜色 -->
+        <attr name="Inside_Interval" format="integer" /> <!-- 圆形区域向里缩进的距离 -->
+        <attr name="Paint_BG_Color" format="integer" /> <!-- 背景色 -->
+        <attr name="TemperTextSize" format="float" /> <!-- 显示文字的大小 -->
+    </declare-styleable>
+
+    <declare-styleable name="CircleCheckBox">
+        <attr name="checked" format="boolean"/>
+        <attr name="animation_duration" format="integer"/>
+        <attr name="tick_width" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="tick_color" format="color"/>
+        <attr name="border_color" format="color"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+    
+      <declare-styleable name="wheel_atter">
+        <attr name="value_text_color" format="integer" /> <!-- TEXT_SIZE -->
+        <attr name="text_size" format="integer" /> <!-- TEXT_SIZE -->
+        <attr name="value_text_size" format="integer" /> <!-- VALUE_TEXT_SIZE -->
+    </declare-styleable>
+    
+        <declare-styleable name="FlowIndicator">  
+        <attr name="count" format="integer" />  
+        <attr name="space" format="dimension" />  
+        <attr name="point_size" format="dimension" />  
+        <attr name="point_seleted_color" format="color|reference" />  
+        <attr name="point_normal_color" format="color|reference" />  
+        <attr name="point_radius" format="dimension" />  
+    </declare-styleable>
+    
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float"/>
+        <attr name="unselectedSaturation" format="float"/>
+        <attr name="unselectedScale" format="float"/>
+        <attr name="maxRotation" format="integer"/>
+        <attr name="scaleDownGravity" format="float"/>
+        <attr name="actionDistance" format="integer">
+          	<enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+    
+      <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction"/>
+        <attr name="bottomOffset" format="dimension"  />
+        <attr name="topOffset" format="dimension"  />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    
+       <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LoadingTextView">
+        <attr name="textStyle">
+            <enum name="noText" value="-1" />
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gravity" format="integer" />
+        <attr name="textSize2" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="android:text" />
+    </declare-styleable>
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius2" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+    </declare-styleable>
+</resources>

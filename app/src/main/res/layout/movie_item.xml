@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dyx.voice.view.ScaleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/mark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="72dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/mark_selector"
+        android:padding="8dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+</com.dyx.voice.view.ScaleLayout>

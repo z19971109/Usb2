@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">语音遥控</string>
+    <string name="fire">Fire!</string>
+    <string name="start">开始</string>
+    <string name="setting">设置</string>
+
+    <drawable name="clr_normal">#ffffff</drawable>
+    <drawable name="clr_pressed">#ff0099cc</drawable>
+
+</resources>
